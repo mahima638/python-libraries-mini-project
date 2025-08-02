@@ -10,6 +10,7 @@ plt.rcParams['figure.figsize'] = (10,10)
 height = [3, 12, 5, 18, 45]
 weight = [2, 3, 4, 3, 2]
 calories_burnt = [3, 4, 5, 6, 2]
+print("Hello")
 #plt.figure(figsize=(10,5))
 #plt.plot(height, weight)
 
