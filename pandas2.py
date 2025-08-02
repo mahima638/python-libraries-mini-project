@@ -1,0 +1,35 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('weather_data.csv')
+print(df.head())
+#print(df.shape)
+print(df.columns)
+#avg_temp = df['Temperature_C'].mean()
+#print("Average Temperature:", avg_temp)
+#max_temp = df['Temperature_C'].max()
+#print("Maximum Temperature:", max_temp)
+#min_temp = df['Temperature_C'].min()
+#print("Minimum Temperature:", min_temp)
+#data_for_Specific_date = df[df['Date_Time'] == '2024-01-14']
+#print("Data for Specific Date:\n", data_for_Specific_date)
+#barish_jyada =df.loc[df['Precipitation_mm'].idxmax()]
+#print( "This location will have rainfall utmost", #barish_jyada['Location'], barish_jyada['Precipitation_mm'], #barish_jyada['Date_Time'])
+#hawa_jyada = df.loc[df['Wind_Speed_kmh'].idxmax()]
+#print("This location might be cyclone prone", #hawa_jyada['Location'], hawa_jyada['Wind_Speed_kmh'], #hawa_jyada['Date_Time'])
+#avg_rainfall_location = df.groupby('Location')['Precipitation_mm'].mean()
+#avg_rainfall_location.plot(kind='bar', color='skyblue')
+#plt.title('Average Rainfall (mm)')
+#plt.xlabel('Location')
+#plt.ylabel('Average Rainfall (mm)')
+#plt.show()
+#plt.hist(df['Temperature_C'], bins=20, color='skyblue')
+#plt.title('Temperature Distribution')
+#plt.xlabel('Temperature (C)')
+#plt.ylabel('Frequency')
+#plt.show()
+plt.scatter(df['Temperature_C'], df['Precipitation_mm'])
+plt.title('Temperature vs Precipitation')
+plt.xlabel('Temperature (C)')
+plt.ylabel('Precipitation (mm)')
+plt.show()
