@@ -35,7 +35,7 @@ data = pd.read_csv('big_mart_sales.csv')
 #print(data.head())
 #print(data['Outlet_Type'].mode())
 #print(data.describe())
-# Assuming 'data' is your DataFrame
+
 #numeric_cols = data.select_dtypes(include=['number']).columns
 #d = data.groupby(['Item_Type', 'Outlet_Size'])[numeric_cols].mean()
 #print(d['Item_MRP'])
