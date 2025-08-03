@@ -1,4 +1,4 @@
-entrypoint = 'trends_patterns.py'
+entrypoint = 'bigmartdataanalysis.py'
 modules = ["python-3.11"]
 
 [nix]
