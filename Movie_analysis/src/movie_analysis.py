@@ -1,9 +1,9 @@
-# Netflix Movies Data Analysis 🎬
+# Movies Data Analysis 🎬
 
 # -----------------------------
 # 1. Introduction
 # -----------------------------
-# This notebook explores a Netflix movies dataset to uncover trends, patterns, and insights.
+# This notebook explores a  movies dataset to uncover trends, patterns, and insights.
 # It includes Exploratory Data Analysis (EDA), key findings, and actionable recommendations.
 # Dataset Sources:
 # - movies.csv – contains movie details (title, genre, release year, duration, etc.)
@@ -70,6 +70,7 @@ plt.xlabel("Year")
 plt.ylabel("Number of Movies")
 plt.xticks(rotation=90)
 plt.tight_layout()
+plt.savefig("movie_per_year.png")
 plt.show()
 
 # Rating distribution
@@ -78,6 +79,7 @@ df['rating'].value_counts().sort_index().plot(kind='bar')
 plt.title("Rating Distribution")
 plt.xlabel("Rating")
 plt.ylabel("Count")
+plt.savefig("rating.png")
 plt.show()
 
 # Genre popularity
@@ -87,6 +89,7 @@ genre_counts.plot(kind='barh', color='skyblue')
 plt.title("Genre Popularity")
 plt.xlabel("Number of Movies")
 plt.ylabel("Genre")
+plt.savefig("genre_popularity.png")
 plt.show()
 
 # Top 10 movies by average rating & number of ratings
@@ -109,6 +112,7 @@ plt.ylabel("Number of Ratings")
 plt.xticks(rotation=90)
 
 plt.tight_layout()
+plt.savefig("Avg_rating_no_of_rating.png")
 plt.show()
 
 # -----------------------------
@@ -140,4 +144,4 @@ for movie in suggestions[:10]:
 # 10. Conclusion
 # -----------------------------
 # This analysis highlights the importance of genre selection, content variety,
-# and tracking audience ratings to guide Netflix’s content strategy.
+# and tracking audience ratings to guide content strategy.

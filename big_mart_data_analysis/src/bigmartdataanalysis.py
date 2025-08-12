@@ -37,11 +37,12 @@ plt.title('MRP vs Sales')
 plt.savefig('mrp_vs_sales.png', dpi=300, bbox_inches='tight')
 plt.show()
 
-# Bar plot: Sales by different Item Types
+#Bar plot: Sales by different Item Types
 sns.barplot(x='Item_Type', y='Item_Outlet_Sales', data=df)
 plt.xticks(rotation=90)
 plt.title('Sales by Item Type')
 plt.savefig('item_vs_outletsales.png', dpi=300, bbox_inches='tight')
+print("downloaded")
 plt.show()
 
 # Heatmap: Correlation matrix for all numeric columns
@@ -50,13 +51,15 @@ plt.figure(figsize=(10, 6))
 sns.heatmap(numeric_df.corr(), annot=True, cmap='coolwarm')
 plt.title('Correlation Matrix')
 plt.savefig('relational_corr.png', dpi=300, bbox_inches='tight')
+print("downloaded")
 plt.show()
 
-# Bar plot: Distribution of Item Types (count, not sales)
+#Bar plot: Distribution of Item Types (count, not sales)
 sns.countplot(x='Item_Type', data=df, color='blue')
 plt.xticks(rotation=90)
 plt.title('Item Type Distribution')
 plt.savefig('Item_bar.png', dpi=300, bbox_inches='tight')
+print("downloaded")
 plt.show()
 
 # Pie chart: Distribution of Fat Content
@@ -64,4 +67,5 @@ fat_content = df['Item_Fat_Content'].value_counts()
 plt.pie(fat_content, labels=fat_content.index, autopct='%1.1f%%')
 plt.title('Fat Content Distribution')
 plt.savefig('fat_content.png', dpi=300, bbox_inches='tight')
+print("downloaded")
 plt.show()

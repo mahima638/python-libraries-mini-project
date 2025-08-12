@@ -1,4 +1,4 @@
-entrypoint = 'bigmartdataanalysis.py'
+entrypoint = 'movie_analysis.py'
 modules = ["python-3.11"]
 
 [nix]
